@@ -13,6 +13,7 @@ import wind from '../assets/wind.png'
 import SearchBar from './SearchBar'
 import WeatherInfo from './WeatherInfo'
 import WeatherStats from './WeatherStats'
+import toast from 'react-hot-toast'
 
 const allIcons = {
     '01d':clear,
@@ -37,7 +38,8 @@ const Weather = () => {
   
   const getweatherData = async (city)=>{
     if(!city){
-      alert("Enter City Name")
+      toast.error('Enter City Name!!');
+
       return
     }
     try{

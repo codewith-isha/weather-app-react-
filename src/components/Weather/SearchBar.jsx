@@ -9,4 +9,4 @@ const SearchBar = ({inputRef , onSearch , searchIcon}) => {
   )
 }
 
-export default SearchBar
+export default SearchBar;
